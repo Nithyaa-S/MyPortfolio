@@ -262,7 +262,7 @@ export const projects = [
     description:
       "A convenient app which helps users to find the nearest parking spot in real time. Park-EZ simplifies the parking experience.",
     image:
-      "https://adityaportfoliowebsite-aditys-hatwar-tss-projects.vercel.app/_next/image?url=%2Fimg%2Fmsc-mock_stack%2Fparkez1.png&w=640&q=75",
+      "/images/parkEZ.jpg",
     tags: [
       "Figma",
     ],
