@@ -188,7 +188,7 @@ const Img = styled(motion.img)`
   object-fit: cover;
   border-radius: 50%; // Make the image round
 
-  filter: grayscale(${({ isHovered }) => (isHovered ? "0%" : "100%")});
+  filter: grayscale(0%); // Remove grayscale effect
   transform: ${({ isHovered }) => (isHovered ? "scale(1.05)" : "scale(1)")}; // Scales up the image slightly
   transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
 
@@ -197,6 +197,7 @@ const Img = styled(motion.img)`
     max-height: 280px;
   }
 `;
+
 
 
 

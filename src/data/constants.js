@@ -7,7 +7,7 @@ export const Bio = {
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/nithyaaas",
+  github: "https://github.com/Nithyaa-S",
   resume:
     "https://drive.google.com/file/d/1ZTCKZnY0CookRRwbhWUCnXiDHszc51FP/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/nithya-s-5a3050259/",
@@ -238,23 +238,23 @@ export const projects = [
       "Node Js",
     ],
     category: "web app",
-    github: "https://github.com/nithyaaas/Avatar-3D-Customiser-Website",
+    github: "https://github.com/Nithyaa-S/AVATAR-3D-Customizer-website",
     webapp: "https://avatar3dcustomiser.vercel.app/",
   },
   {
-    id: 1,
-    title: "Nike-Shopping-Website",
-    date: "Jul 2023",
-    description:
+    "id": 1,
+    "title": "Nike-Shopping-Website",
+    "date": "Jul 2023",
+    "description":
       "The Nike Shopping Website project is a modern, responsive e-commerce platform designed for a seamless shopping experience. Developed using Figma for design and prototyping, the project focuses on delivering a visually appealing and user-friendly interface for browsing and purchasing Nike products.",
-    image:
+    "image":
       "https://adityaportfoliowebsite-aditys-hatwar-tss-projects.vercel.app/_next/image?url=%2Fimg%2Fmsc-mock_stack%2Fnike.png&w=640&q=75",
-    tags: [
-      "Figma",
-    ],
-    category: "web app",
-    github: "https://github.com/nithyaaas/Nike-Shopping-Website?tab=readme-ov-file",
+    "tags": ["Figma"],
+    "category": "web app",
+    "github": "https://github.com/nithyaaas/Nike-Shopping-Website?tab=readme-ov-file",
+    "live": "https://www.figma.com/proto/CJavDzkuQQve6py2B4XTrG/UX-UI-Project-internship?type=design&node-id=2-2&t=QHCQ1QEfn909V9Q7-1&scaling=scale-down&page-id=0%3A1"
   },
+  
   {
     id: 2,
     title: "Park-EZ",
@@ -267,6 +267,7 @@ export const projects = [
       "Figma",
     ],
     category: "android app", // Updated category
+    github: "https://github.com/nithyaaas/Nike-Shopping-Website?tab=readme-ov-file",
   },
   {
     id: 3,
@@ -284,7 +285,7 @@ export const projects = [
       "TypeScript",
     ],
     category: "web app",
-    github: "https://github.com/nithyaaas/Weather-App",
+    github: "https://github.com/Nithyaa-S/Weather-App",
   },
   {
     id: 4,
@@ -296,7 +297,7 @@ export const projects = [
       "/images/Facial Expr.jpg",
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
     category: "machine learning",
-    github: "https://github.com/nithyaaas/Emotion-Recognition-",
+    github: "https://github.com/Nithyaa-S/Emotion-Recognition",
   },
   {
     id: 5,
@@ -307,6 +308,6 @@ export const projects = [
     image:"/images/Portfolio img.jpg",
     tags: ["React", "Next.js", "CSS Modules/Styled Components","Framer Motion"],
     category: "web app",
-    github: "",
+    github: "https://github.com/Nithyaa-S/MyPortfolio",
   },
 ];

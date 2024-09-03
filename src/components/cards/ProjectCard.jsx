@@ -33,6 +33,9 @@ const Card = styled.div`
   }
 `;
 
+const ImageLink = styled.a`
+  display: block;
+`;
 const Image = styled.img`
   width: 400px;
   height: 100%;
@@ -40,17 +43,36 @@ const Image = styled.img`
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, filter 0.3s ease;
-
+  cursor: pointer; /* Indicates clickable */
+  position: relative; /* Needed for ::after positioning */
+  
   &:hover {
     transform: scale(1.1);
     filter: brightness(1.2);
   }
 
-  @media (max-width: 768px) {
-    width: 100%;
-    height: auto;
+  &::after {
+    content: "Click to View";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ${({ theme }) => theme.text_secondary};
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevents interfering with the click event */
+  }
+
+  &:hover::after {
+    opacity: 1;
   }
 `;
+
+
 
 const Content = styled.div`
   display: flex;
@@ -138,9 +160,18 @@ const Button = styled.a`
 `;
 
 const ProjectCard = ({ project }) => {
+  // Define the project-specific links
+  const projectLinks = {
+    "Avatar-3D-Customiser-Website": "https://avatar3dcustomiser.vercel.app/",
+    "Nike-Shopping-Website": "https://www.figma.com/proto/CJavDzkuQQve6py2B4XTrG/UX-UI-Project-internship?type=design&node-id=2-2&t=QHCQ1QEfn909V9Q7-1&scaling=scale-down&page-id=0%3A1",
+    "Park-EZ": "https://www.figma.com/proto/NEl7sOCDr1SIpC2Aii0W9k/SIH?type=design&node-id=142-91&t=IUXYFyxaoXJvEpRG-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=142%3A91"
+  };
+
   return (
     <Card>
-      <Image src={project.image} />
+      <ImageLink href={projectLinks[project.title]} target="_blank">
+        <Image src={project.image} />
+      </ImageLink>
       <Content>
         <Details>
           <Title>{project.title}</Title>
