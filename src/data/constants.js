@@ -286,6 +286,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/Nithyaa-S/Weather-App",
+    webapp: "https://skysync-weather.vercel.app/",
   },
   {
     id: 4,
